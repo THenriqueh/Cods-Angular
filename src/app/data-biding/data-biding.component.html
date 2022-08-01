@@ -1,0 +1,32 @@
+<h1>* Interpolation</h1>
+
+<h2>Nome:{{ nome }}</h2>
+<h2>Idade: {{ idade }}</h2>
+
+<p>{{ nome }} tem mais de 20 anos?</p>
+<p>{{ idade > 20 }}</p>
+<p>Quanto é {{ idade }} + {{ maisUm }}?</p>
+<p>{{ idade + maisUm }}</p>
+<br />
+
+<hr />
+
+<h1>* Porpety Biding</h1>
+<button [disabled]="checkedDisable">Button</button>
+<img [src]="imgSrc" [title]="imgTitle" [alt]="imgTitle" />
+
+<br />
+<hr />
+<h1>Event Biding</h1>
+<button (click)="alertInfo($event)">Evento</button>
+<div
+  (mousemove)="mouseMove($event)"
+  style="background: red; width: 300px; height: 300px"
+></div>
+{{ position.x }} -
+{{ position.y }}
+<br />
+<hr />
+<h1>* Two way biding</h1>
+<input type="text" [(ngModel)]="nome" />
+{{ nome }}
