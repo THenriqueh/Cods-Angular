@@ -10,6 +10,7 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public condition:boolean = true;
   public conditionClick:boolean=true;
   public list: Array<{nome:string,idade:number}>= [{nome:"Thallis", idade:23},{nome:"Thallis", idade:23},{nome:"Thallis", idade:23}]
+  public nome: string = "thallis";
 
   constructor() { }
 
